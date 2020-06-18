@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="TRANSACTION DATE"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:padding="3dp"
+                    android:text="DR. AMOUNT"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/debit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:text="BALANCE"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:text="CR. AMOUNT"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-3dp"
+            android:background="#EFEFEF"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:padding="5dp"
+                android:text="REMARKS"
+                android:textColor="@color/text_color"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/remark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".75"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

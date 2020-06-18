@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    tools:ignore="MissingPrefix">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        app:cardCornerRadius="1dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding=".5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:text="Payout No"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/payout_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:gravity="left"
+                        android:padding="1dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="Name"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/display_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:text="Gross Amt."
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/gross_amt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:gravity="left"
+                        android:padding="1dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:padding="1dp"
+                        android:text="Net Amt."
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/net_amt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:text="Pro. Fee"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/processing_fee"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:gravity="left"
+                        android:padding="1dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:padding="1dp"
+                        android:text="TDS Amt."
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/tds_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_black_light" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Direct Income"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="Team Performance Bonus"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/direct_income"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/team_performance_bonus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Star Club"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="SuperStar Club"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detail_lo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/star_club"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/super_star_club"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Bronze Club"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="Silver Club"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/bronze_club"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/silver_club"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Gold Club"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="Platinum Club"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/gold_club"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/platinum_club"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="SuperPlatinum Club"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="Closing Date"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/super_platinum_club"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/closing_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_black_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Action"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_bg_profile"
+                        android:drawableStart="@drawable/view_icon"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/white"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingTop="3dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="3dp"
+                        android:text="View"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/view_more"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="1dp"
+                        android:text="VIEW MORE"
+                        android:textColor="@color/red"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.yehm"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 14
+        versionName "2.0.3"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            buildConfigField "String", "BASE_URL", "\"https://yehm.co.in/api/WebApi/\""
+            buildConfigField "String", "BASE_URL_IMAGES", "\"https://yehm.co.in/\""
+            buildConfigField "String", "PINCODEURL", "\"https://www.royallife.biz/MLM/Models/WebServices/AutoComplete.asmx/GetLocationByPin?pin=\""
+            buildConfigField "String", "SMS_URL", "\"http://www.unicel.in/SendSMS/sendmsg.php?uname=YouthEnergy&pass=qtpl2015&send=YEHMIN&dest=91\""
+
+        }
+        release {
+            buildConfigField "String", "BASE_URL", "\"https://yehm.co.in/api/WebApi/\""
+            buildConfigField "String", "BASE_URL_IMAGES", "\"https://yehm.co.in/\""
+            buildConfigField "String", "PINCODEURL", "\"https://www.royallife.biz/MLM/Models/WebServices/AutoComplete.asmx/GetLocationByPin?pin=\""
+            buildConfigField "String", "SMS_URL", "\"http://www.unicel.in/SendSMS/sendmsg.php?uname=YouthEnergy&pass=qtpl2015&send=YEHMIN&dest=91\""
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //Custom Font
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+
+    //butterknife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    /**
+     * Retrofit
+     */
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+    // image loading library Glide itself
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.chrisbanes:PhotoView:1.3.0'
+
+//    // Dialog -----------------------------------------------------
+    implementation 'com.github.jrvansuita:PickImage:2.2.4'
+    // Crop Image -----------------------------------------------------
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
+//fab button
+    implementation 'com.github.clans:fab:1.6.4'
+//    implementation 'com.android.volley:volley:1.1.1'
+    // App Updater ----------------------------------------------
+    implementation 'com.github.javiersantos:AppUpdater:2.7'
+
+//    label dependency
+    implementation 'com.github.linger1216:labelview:v1.1.2'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.tapadoo.android:alerter:4.0.0'
+
+    // for Rx Java
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    implementation files('libs/acra-4.5.0.jar')
+
+}

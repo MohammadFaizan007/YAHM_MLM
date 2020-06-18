@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30"
+                android:background="#F6F6F6"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="N/A"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="3dp"
+                    android:text="29-01-2018"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Conformed"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_light_black"
+                    android:drawableStart="@drawable/view_icon"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/light_text_color"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="3dp"
+                    android:text="View"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="0.75"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/member_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="BHUpender kumar singh"
+                    android:padding="1dp"
+                    android:textAppearance="@style/TextField"
+                    android:textColor="@color/black_effective"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:padding="1dp"
+                        android:text="Order NO."
+                        android:textAppearance="@style/TextField"
+                        android:textColor="@color/black_effective"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/order_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight=".5"
+                        android:gravity="right"
+                        android:hint="Not Available"
+                        android:padding="1dp"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/black_effective"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:padding="1dp"
+                        android:text="BV"
+                        android:textAppearance="@style/TextField"
+                        android:textColor="@color/black_effective"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight=".5"
+                        android:gravity="right"
+                        android:hint="Not Available"
+                        android:padding="1dp"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/black_effective"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:padding="1dp"
+                        android:text="Amount"
+                        android:textAppearance="@style/TextField"
+                        android:textColor="@color/black_effective"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/amt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight=".5"
+                        android:gravity="right"
+                        android:hint="Not Available"
+                        android:padding="1dp"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/black_effective"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

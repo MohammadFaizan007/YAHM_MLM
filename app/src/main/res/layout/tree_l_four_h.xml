@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/node_fifteen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="3dp"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/tree_l_four_eight_photo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/demo_person" />
+
+    <LinearLayout
+        android:id="@+id/tree_l_four_eight_lo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tree_l_four_eight_customerid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:shadowColor="@color/colorPrimary"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color"
+            android:textSize="6sp" />
+
+        <TextView
+            android:id="@+id/tree_l_four_eight_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:textSize="6sp" />
+
+        <TextView
+            android:id="@+id/tree_l_four_eight_customer_spillby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="6sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tree_l_four_eight_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="REGISTER"
+        android:textColor="@color/colorPrimary"
+        android:textSize="6sp"
+        android:visibility="gone" />
+</LinearLayout>

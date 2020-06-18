@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="NA"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Login ID"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_login_id"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:text="Activate With"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_activate_with"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:text="Sponsor ID"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_sponsor_id"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:text="Joining On"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_join_on"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <TextView
+            android:id="@+id/tv_login_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:hint="NA"
+            android:textColor="@color/orange"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView78"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
+
+        <TextView
+            android:id="@+id/tv_activate_with"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:hint="NA"
+            android:textColor="@color/orange"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView79"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login_id" />
+
+        <TextView
+            android:id="@+id/tv_sponsor_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:hint="NA"
+            android:textColor="@color/orange"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView80"
+            app:layout_constraintTop_toBottomOf="@+id/tv_activate_with" />
+
+        <TextView
+            android:id="@+id/tv_join_on"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:hint="NA"
+            android:paddingBottom="10dp"
+            android:textColor="@color/orange"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView81"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sponsor_id" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrOne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/constrTwo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_join_on">
+
+            <TextView
+                android:id="@+id/tvlegType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/list_bg"
+                android:paddingLeft="5dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Type"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvlegActive"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <TextView
+                android:id="@+id/tvlegActive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Active"
+                android:textSize="12sp"
+
+                android:textColor="@color/text_color"
+                app:layout_constraintBottom_toTopOf="@+id/tvLegInactive"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvlegType" />
+
+            <TextView
+                android:id="@+id/tvLegInactive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Inactive"
+                android:textSize="12sp"
+
+                android:textColor="@color/text_color"
+                app:layout_constraintBottom_toTopOf="@+id/totalmembers"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvlegActive" />
+
+            <TextView
+                android:id="@+id/totalmembers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Total"
+                android:textSize="12sp"
+
+                android:textColor="@color/text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLegInactive" />
+
+            <TextView
+                android:id="@+id/totalbusiness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="BV"
+                android:textColor="@color/text_color"
+                android:textSize="12sp
+"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalmembers" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Current Business"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalbusiness" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/constrThree"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="0.22"
+            app:layout_constraintStart_toEndOf="@+id/constrOne"
+            app:layout_constraintTop_toBottomOf="@+id/tv_join_on">
+
+            <TextView
+                android:id="@+id/tvLeft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/list_bg"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="4dp"
+                android:text="LEFT"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/active_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="12sp"
+
+                android:textColor="@color/text_color"
+                app:layout_constraintBottom_toTopOf="@+id/inactive_left"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLeft"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <TextView
+                android:id="@+id/inactive_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="12sp"
+
+                android:textColor="@color/text_color"
+                app:layout_constraintBottom_toTopOf="@+id/totalmembers_left"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/active_left" />
+
+            <TextView
+                android:id="@+id/totalmembers_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:textSize="12sp"
+
+                android:paddingBottom="4dp"
+                android:textColor="@color/text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inactive_left" />
+
+            <TextView
+                android:id="@+id/totalbuis_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="NA"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalmembers_left" />
+
+            <TextView
+                android:id="@+id/txt_cbleft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:gravity="center"
+                android:textSize="12sp"
+
+                android:textColor="@color/text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalbuis_left" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/constrFour"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="0.22"
+            app:layout_constraintStart_toEndOf="@+id/constrTwo"
+            app:layout_constraintTop_toBottomOf="@+id/tv_join_on">
+
+            <TextView
+                android:id="@+id/tvRight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/list_bg"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="4dp"
+                android:text="RIGHT"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/active_right"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <TextView
+                android:id="@+id/active_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="12sp"
+
+                android:textColor="@color/text_color"
+                app:layout_constraintBottom_toTopOf="@+id/inactive_right"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRight" />
+
+            <TextView
+                android:id="@+id/inactive_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="12sp"
+
+                android:textColor="@color/text_color"
+                app:layout_constraintBottom_toTopOf="@+id/totalmembers_right"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/active_right" />
+
+            <TextView
+                android:id="@+id/totalmembers_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:textSize="12sp"
+
+                android:paddingBottom="4dp"
+                android:textColor="@color/text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inactive_right" />
+
+            <TextView
+                android:id="@+id/totalbuis_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="NA"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalmembers_right" />
+
+            <TextView
+                android:id="@+id/txt_cbright"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:gravity="center"
+                android:textSize="12sp"
+
+                android:textColor="@color/text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalbuis_right" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrFour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="0.22"
+            app:layout_constraintStart_toEndOf="@+id/constrThree"
+            app:layout_constraintTop_toBottomOf="@+id/tv_join_on">
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/list_bg"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="4dp"
+                android:text="Total"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/active_total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <TextView
+                android:id="@+id/active_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="12sp"
+
+                android:textColor="@color/text_color"
+                app:layout_constraintBottom_toTopOf="@+id/inactive_total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/total" />
+
+            <TextView
+                android:id="@+id/inactive_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="12sp"
+
+                android:textColor="@color/text_color"
+                app:layout_constraintBottom_toTopOf="@+id/totalmembers_total"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/active_total" />
+
+            <TextView
+                android:id="@+id/totalmembers_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:textSize="12sp"
+
+                android:paddingBottom="4dp"
+                android:textColor="@color/text_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inactive_total" />
+
+            <TextView
+                android:id="@+id/totalbuis_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="NA"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalmembers_total" />
+
+            <TextView
+                android:id="@+id/txti_cb_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:gravity="center"
+
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalbuis_total" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_submit"
+            android:text="OK"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constrOne" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

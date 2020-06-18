@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/cancel" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancel"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/viewAllIncome_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:background="@color/white"
+                android:divider="@color/white"
+                android:dividerHeight="2dp"
+                android:scrollbars="none"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/noRecFound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="No Record found"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/goto_top"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/back_to_top"
+            android:visibility="gone" />
+    </RelativeLayout>
+</FrameLayout>
+
+
+
+
+
+

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp">
+
+    <ScrollView
+        android:id="@+id/uploadDocuments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/primary_header"
+                android:gravity="center"
+                android:text="Upload Profile Pic"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgProfle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/border"
+                android:src="@drawable/camera_upload"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/primary_header"
+                android:gravity="center"
+                android:text="Pan Card"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/textView37"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileStatus" />
+
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/primary_header"
+                android:gravity="center"
+                android:text="ID Proof"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView28"
+                app:layout_constraintTop_toBottomOf="@+id/profileStatus" />
+
+            <com.lid.lib.LabelImageView
+                android:id="@+id/imgPanCard"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/border"
+                android:padding="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/camera_upload"
+                app:label_backgroundColor="@color/colorPrimaryDark"
+                app:label_height="30dp"
+                app:label_orientation="LEFT_TOP"
+                app:label_textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/imgIdProof"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <com.lid.lib.LabelImageView
+                android:id="@+id/imgIdProof"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/border"
+                android:padding="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/camera_upload"
+                app:label_backgroundColor="@color/colorPrimaryDark"
+                app:label_height="30dp"
+                app:label_orientation="LEFT_TOP"
+                app:label_textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imgPanCard"
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/primary_header"
+                android:gravity="center"
+                android:text="Bank Detail"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/textView39"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panCardStatus" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/primary_header"
+                android:gravity="center"
+                android:text="Address Detail"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/idProofStatus" />
+
+            <com.lid.lib.LabelImageView
+                android:id="@+id/imgbankDetail"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                android:background="@drawable/border"
+                android:padding="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/camera_upload"
+                app:label_backgroundColor="@color/colorPrimaryDark"
+                app:label_height="30dp"
+                app:label_orientation="LEFT_TOP"
+                app:label_textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/imgAddressProof"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+
+            <com.lid.lib.LabelImageView
+                android:id="@+id/imgAddressProof"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/border"
+                android:padding="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/camera_upload"
+                android:visibility="gone"
+                app:label_backgroundColor="@color/colorPrimaryDark"
+                app:label_height="30dp"
+                app:label_orientation="LEFT_TOP"
+                app:label_textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imgbankDetail"
+                app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+            <Button
+                android:id="@+id/btnUploadDocuments"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_margin="16dp"
+                android:background="@drawable/rect_bg_profile"
+                android:drawableRight="@drawable/upload"
+                android:drawablePadding="-25dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Upload"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bnkDetailStatus" />
+
+            <TextView
+                android:id="@+id/panCardStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/status_bg"
+                android:padding="4dp"
+                android:text="Pan Card Status"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imgPanCard"
+                app:layout_constraintStart_toStartOf="@+id/imgPanCard"
+                app:layout_constraintTop_toBottomOf="@+id/imgPanCard" />
+
+            <TextView
+                android:id="@+id/idProofStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/status_bg"
+                android:padding="4dp"
+                android:text="ID Proof Status"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imgIdProof"
+                app:layout_constraintStart_toStartOf="@+id/imgIdProof"
+                app:layout_constraintTop_toBottomOf="@+id/imgIdProof" />
+
+            <TextView
+                android:id="@+id/bnkDetailStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/status_bg"
+                android:padding="4dp"
+                android:text="Bank Detail Confirm"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imgbankDetail"
+                app:layout_constraintStart_toStartOf="@+id/imgbankDetail"
+                app:layout_constraintTop_toBottomOf="@+id/imgbankDetail" />
+
+            <TextView
+                android:id="@+id/addressDetailStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/status_bg"
+                android:padding="4dp"
+                android:text="Address Confirm"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imgAddressProof"
+                app:layout_constraintStart_toStartOf="@+id/imgAddressProof"
+                app:layout_constraintTop_toBottomOf="@+id/imgAddressProof" />
+
+            <TextView
+                android:id="@+id/profileStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/status_bg"
+                android:padding="4dp"
+                android:text="profile Status"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imgProfle"
+                app:layout_constraintStart_toStartOf="@+id/imgProfle"
+                app:layout_constraintTop_toBottomOf="@+id/imgProfle" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

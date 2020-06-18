@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="MissingPrefix"
+    tools:targetApi="11">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="5dp"
+        card_view:cardBackgroundColor="#CCFFFFFF">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_account_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="@color/text_color_light"
+                        android:padding="2dp"
+                        android:textColorHint="@color/text_color_light">
+
+                        <EditText
+                            android:id="@+id/account_holder_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/text_color"
+                            android:clickable="true"
+                            android:hint="Account Holder Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_account_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="@color/text_color_light"
+                        android:padding="2dp"
+                        android:textColorHint="@color/text_color_light">
+
+                        <EditText
+                            android:id="@+id/account_no_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/text_color"
+                            android:clickable="true"
+                            android:hint="Account No."
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_ifsc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="@color/text_color_light"
+                        android:padding="2dp"
+                        android:textColorHint="@color/text_color_light">
+
+                        <EditText
+                            android:id="@+id/ifsc_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/text_color"
+                            android:clickable="true"
+                            android:hint="IFSC"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_et_bank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="@color/text_color_light"
+                        android:padding="2dp"
+                        android:textColorHint="@color/text_color_light">
+
+                        <EditText
+                            android:id="@+id/et_bank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/text_color"
+                            android:clickable="true"
+                            android:hint="Bank"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_branch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="@color/text_color_light"
+                        android:padding="2dp"
+                        android:textColorHint="@color/text_color_light">
+
+                        <EditText
+                            android:id="@+id/branch_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/text_color"
+                            android:clickable="true"
+                            android:hint="Branch"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_pan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="@color/text_color_light"
+                        android:padding="2dp"
+                        android:textColorHint="@color/text_color_light">
+
+                        <EditText
+                            android:id="@+id/pan_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/text_color"
+                            android:clickable="true"
+                            android:hint="Pan"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLength="10"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_aadhar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="@color/text_color_light"
+                        android:padding="2dp"
+                        android:textColorHint="@color/text_color_light">
+
+                        <EditText
+                            android:id="@+id/aadhar_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/text_color"
+                            android:clickable="true"
+                            android:hint="Aadhar"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="12"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rect_bg_profile"
+                        android:gravity="center"
+                        android:paddingStart="20dp"
+                        android:text="Save"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

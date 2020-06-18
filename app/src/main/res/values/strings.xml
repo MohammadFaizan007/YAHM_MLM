@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">YEHM</string>
+
+
+    <!--Side Menu-->
+
+
+    <!--    PERMISSIONS    -->
+    <string name="alert_internet">Not able to connect to Server. Please check your network connection and try again.</string>
+    <string name="alert_text">Alert</string>
+    <string name="permission_camera_rationale11">Some permission are required to use the app.</string>
+    <string name="reqst_permission">Request permission?</string>
+
+    <string name="add_request">Add New Request</string>
+
+    <string name="crash_toast_text">Crash Report</string>
+</resources>

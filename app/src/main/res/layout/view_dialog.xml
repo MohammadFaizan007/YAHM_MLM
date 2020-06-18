@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.9"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Product Name"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_cancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/cancel"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="Product Code"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/productCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="Quantity"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="BV"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/bv_dialog"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="MRP"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mrp_dialog"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="Net Amt"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/netAmount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="CGST"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cgst"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="SGST"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sgst"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="IGST"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/igst"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="Package Name"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/package_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="Package Amount"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/package_amount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="Package BV"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/package_bv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="Sponsor Id"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sponsor_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/two_dots"
+                android:gravity="left|center_vertical"
+                android:text="Sponsor Name"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sponsor_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rect_bg_profile"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Close"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</ScrollView>

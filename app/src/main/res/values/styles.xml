@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBarNew">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <attr name="textFieldStyle" format="reference" />
+
+    <style name="TextField" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+
+    <style name="TextField_Bold" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="AppTheme">
+        <item name="colorControlNormal">@color/text_color</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/text_color</item>
+    </style>
+
+    <style name="alertTextColor" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="EditTextHint" parent="Theme.AppCompat">
+        <item name="colorAccent">@android:color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+
+</resources>

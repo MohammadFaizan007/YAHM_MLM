@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/goto_root"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rect_bg_green"
+                android:gravity="center"
+                android:text="Go On Root"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_mydirect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/white"
+            android:divider="@color/white"
+            android:dividerHeight="6dp"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/noRecFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Record found"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/goto_top"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/back_to_top"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
